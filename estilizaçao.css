@@ -1,5 +1,83 @@
+
 body{
-    margin: auto;
+    margin: 0;
     padding: 0;
+    margin: 0 auto;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#menusup{
+    background-color: #FFD900;
+    width: 1519px;
+    height: 118px;
+    flex-shrink: 0;
+    
+}
+
+#menusup img{
+    margin-top: 30px;
+    margin-left: 80px;
+}
+
+#meioesquerda{
+    width: 802px;
+    height: 694px;
+    background-color: #514988;
+    margin-top: -21px;
+}
+
+#meiodireita img{
+    align-items: left;
+    max-width:650px;
+    max-height:510px;
+    margin-left:850px;
+    margin-top: 100px;
+    
+}
+
+#titulo1{
+    color: #F3C61F;
+    font-size: 60px;
+    margin-top: 20px;
+    padding: 40px;
+    text-align: center;
+}
+
+#subti{
+    color: #FFF;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin-top: -60px;
+    font-size: 30px;
+}
+
+#resttext{
+    color: #FFF;
+    
+    font-size: 25px;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.timer{
+display: grid;
+grid-auto-flow: column;
+margin-top: -650px;
+font-size: 30px;
+padding-left: 850px;
+
+}
+
+
+#maior{
+    color: #E33881;
+    margin-top: -550px;
+    padding-left: 860px;
+    font-size: 25px;
+}
+
+#final{
+    margin-top: 600px;
+    color: #F3C61F;
+    font-size: 12px;
 }
