@@ -116,3 +116,9 @@ button:hover{
     transform:translateY(-7px); 
     transition-duration:1s;
 }
+
+
+.card-highlight
+{
+    box-shadow: 10px 10px crimson;
+}
