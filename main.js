@@ -1,3 +1,5 @@
+const ingresso = [];
+
 function addRedBorder(id)
 {
     element = document.querySelector("#" + id);
@@ -24,7 +26,7 @@ function checkKeyboardCode()
     }, false)
 }
 
-document.addEventListener(`keydown`, (event) => {
+document.addKeyboardEventListener(`keydown`, (event) => {
 
     var ingresso1 = document.getElementById("quinta");
     var ingresso2 = document.getElementById("sexta");
@@ -60,6 +62,20 @@ document.addEventListener(`keydown`, (event) => {
     }
 }, false);
 
+selectCard = (selector) => {
+    var element = document.querySelector(selector);
+    element.classList.toggle("card-selected");
+    if(ingressos.includes(selector)) ingresso.pop(selector);
+    else ingresso.push(selector)
+}
 
-checkKeyboardCode();
+showSelectedCards = () =>
+{
+    if(ingressos.length > 0) alert("Ingressos Selecionados:" + ingressos);
+}
+
+
+addKeyboardEventListeners();
+
+
 
